@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SShoes", "http://localhost:8010/API/SShoes", "{FBADDB09-09DF-4EF6-B754-D1A52C354171}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/SShoes"
+		Debug.AspNetCompiler.PhysicalPath = "..\API\SShoes\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SShoes\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SShoes"
+		Release.AspNetCompiler.PhysicalPath = "..\API\SShoes\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SShoes\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\API\SShoes\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SShoes", "..\Source\SShoes\SShoes.csproj", "{760C8257-2E30-457C-8505-E8E6C5AC8EF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBADDB09-09DF-4EF6-B754-D1A52C354171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBADDB09-09DF-4EF6-B754-D1A52C354171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBADDB09-09DF-4EF6-B754-D1A52C354171}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBADDB09-09DF-4EF6-B754-D1A52C354171}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{760C8257-2E30-457C-8505-E8E6C5AC8EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760C8257-2E30-457C-8505-E8E6C5AC8EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760C8257-2E30-457C-8505-E8E6C5AC8EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760C8257-2E30-457C-8505-E8E6C5AC8EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

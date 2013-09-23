@@ -1,0 +1,14 @@
+﻿@{    
+    string[] ccsActive = new string[30];
+    ccsActive[ViewBag.activeIndex] = "active";
+}
+
+<aside class="span3">
+    <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+            <li class="nav-header">Inventory Control</li>
+            <li class="@ccsActive[0]"><a href="@Url.Action("StoreI", "Store")">Stores</a></li>
+            <li class="@ccsActive[1]"><a href="@Url.Action("ArticlesI", "Home")">Articles</a></li>
+        </ul>
+    </div>
+</aside>
