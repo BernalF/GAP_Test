@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace SShoes.Utilities
 {
+    /// <summary>
+    /// Utilitary general collection class
+    /// </summary>
     public class GeneralCollections
     {
         /// <summary>

@@ -2,6 +2,9 @@
 
 <script RunAt="server">
 
+    /// <summary>
+    /// Application_BeginRequest to accept calls from external request 
+    /// </summary>    
     protected void Application_BeginRequest(object sender, EventArgs e)
     {
         HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");

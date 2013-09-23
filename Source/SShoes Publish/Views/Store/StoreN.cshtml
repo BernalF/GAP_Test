@@ -1,0 +1,45 @@
+﻿@model SShoes.Models.StoresModel
+@{
+    ViewBag.Title = "Stores";
+    ViewBag.activeIndex = 0;
+}
+@section styles {
+}
+<div class="container">
+    <div class="row">
+        @Html.Partial("_NavIndex")
+        <div class="span9">
+            <div class="hero-unit">
+                <h3>Add Stores</h3>
+                <dl></dl>
+                @using (Html.BeginForm("AddorUpdateStores", "Store", new { parentView = "StoreN" }, FormMethod.Post, new { @class = "form-horizontal" }))
+                {        
+                    <div class="control-group">                        
+                        @Html.LabelFor(m => m.Name, new { @class = "control-label"})
+                        <div class="controls">
+                            @Html.TextBoxFor(m => m.Name, htmlAttributes: new { placeholder = "Store Name" })
+                            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "help-inline" })
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        @Html.LabelFor(m => m.Address, new { @class = "control-label"})
+                        <div class="controls">
+                            @Html.TextAreaFor(m => m.Address, htmlAttributes: new { placeholder = "Address" })
+                            @Html.ValidationMessageFor(m => m.Address, "", new { @class = "help-inline" })
+                        </div>
+                    </div>                                         
+                    <div class="control-group">
+                        <div class="controls">
+                            <a  href="@Url.Action("StoreI", "Store")" class="btn btn-danger" ><i class="icon-arrow-left"></i>Cancel</a>
+                            <button type="submit" class="btn btn-success"><i class="icon-ok-sign"></i>Save</button>
+                        </div>
+                    </div>
+                }
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    @Html.ValidationSummary("", htmlAttributes: new { @class = "alert alert-error" })
+                }
+            </div>
+        </div>
+    </div>
+</div>

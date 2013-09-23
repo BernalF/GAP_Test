@@ -7,13 +7,12 @@ using System.Net;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using System.Runtime.Serialization.Json;
-using SShoes.Models;
-using System.Net.Http;
-using System.Web.Script.Serialization;
 
 namespace SShoes.Controllers
 {
+    /// <summary>
+    /// Home Controller class
+    /// </summary>
     public class HomeController : Controller
     {
         /// <summary>

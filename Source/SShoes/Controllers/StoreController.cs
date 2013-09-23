@@ -8,6 +8,9 @@ using SShoes.Models;
 
 namespace SShoes.Controllers
 {
+    /// <summary>
+    /// Store Controller class
+    /// </summary>
     public class StoreController : Controller
     {
         /// <summary>
