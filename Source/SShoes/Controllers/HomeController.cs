@@ -53,7 +53,7 @@ namespace SShoes.Controllers
         /// </summary>
         public ActionResult ArticlesD(int? id)
         {
-            HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create("http://localhost:8010/API/SShoes/Services/SShoesSL.svc/DelArticles/" + id);
+            HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(@System.Configuration.ConfigurationManager.AppSettings["apiServer"] + "API/SShoes/Services/SShoesSL.svc/DelArticles/" + id);
             webrequest.Method = "GET";
             using (WebResponse response = webrequest.GetResponse())
             {
